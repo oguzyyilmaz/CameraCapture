@@ -13,9 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 public class CameraController {
 
 
-    @GetMapping("/photo")
+    @GetMapping("/takePhoto")
     @ResponseBody
-    public String camera(HttpServletRequest request) {
+    public String takePhoto(HttpServletRequest request) {
         final String userIpAddress = request.getRemoteAddr();
         final String userAgent = request.getHeader("user-agent");
         System.out.println(userIpAddress +"  \n   " +userAgent);
